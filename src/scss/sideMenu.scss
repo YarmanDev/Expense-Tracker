@@ -1,0 +1,34 @@
+.sideMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 82%;
+  bottom: 0;
+  background-color: #102c4e;
+  border-radius: 46px 0 0 46px;
+  padding: 20px 30px;
+}
+.options-wrapper {
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  margin-top: 20px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+
+  &:hover {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background-color: #0d3181;
+  }
+
+  &-image {
+    margin-right: 15px;
+  }
+}

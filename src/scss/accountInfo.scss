@@ -1,0 +1,90 @@
+.accountInfo {
+  flex: 0 0 35%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-wrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.card {
+  width: 80%;
+  height: 60%;
+  padding: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  background: rgba(255, 236, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  > h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.first {
+    margin: 60px 0 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+  &.second {
+    position: absolute;
+    left: -5px;
+    background: #b9c320;
+  }
+}
+
+.barChart {
+  align-items: center;
+  width: 90%;
+  padding: 20px 0 0 20px;
+  margin-top: -90px;
+}
+
+@media (max-width: 1600px) {
+  .card {
+    font-size: 20px;
+
+    &-title {
+      margin-bottom: 33px;
+    }
+
+    > h4 {
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+  }
+
+  .barChart {
+    align-items: center;
+    width: 85%;
+    padding: 20px 0 0 20px;
+    margin-top: -55px;
+  }
+}
